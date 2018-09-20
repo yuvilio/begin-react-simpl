@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+/* vendor libraries */
+@import './_tachyons'; /* bring in tachyons parts a-la-carte */
+
+/* demonstrate postcss-mixin plugin (for css mixins) is installed and working */
+
+body {
+	background-color: wheat;
+}
+
+/* import './styles/styles.css'; in js  */
+.catalog-title {
+	border-bottom: 1px solid tomato;
+}
