@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Minimal React Webpack Babel Setup</title>
+    <!--  when using webpack, add a link to the generated css (webpack-dev-server just adds a <style> tag to the page ) <link rel="stylesheet" href="/app.css">  -->
+  </head>
+  <!-- now that we're using tachyons css, let's use some of its classes -->
+  <body class="w-100 sans-serif">
+    <main class="bg-white bt b--black-10">
+      <div class="pv4 ph3 ph5-ns">
+        <p>app here: </p>
+        <div id="app"></div>
+      </div>
+    </main>
+
+    <header class="tc pv4 pv5-ns">
+      <h1 class="f5 f4-ns fw6 mid-gray">Catalog </h1>
+      <h2 class="f6 gray fw2 ttu tracked">click the "update catalog" link below to change the state of the component with new data</h2>
+    </header>
+
+    <!--  button to show the data -->
+    <a href="#0" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box update-data">
+       <span class="pr1">update catalog</span>
+       <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+         <title>chevronRight icon</title>
+         <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+       </svg>
+     </a>
+
+
+     <a href="#0" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box log-data">
+        <span class="pr1">console.log() the data</span>
+        <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>chevronRight icon</title>
+          <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+        </svg>
+      </a>
+
+    <!--  when generating with webpack, add <script src="/app.bundle.js"></script> -->
+  </body>
+</html>

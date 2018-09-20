@@ -1,5 +1,7 @@
 import React from 'react';
 import catalogEntriesJson from '../../data/catalog.json' // data we'll output
+// one way to compose components. we'll import the <CatalogEntry /> component
+// and use it in the <Catalog /> one
 import { CatalogEntry } from './catalog-entry.jsx'
 
 class Catalog extends React.Component {
