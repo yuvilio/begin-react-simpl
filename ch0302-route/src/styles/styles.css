@@ -6,7 +6,7 @@
 /* demonstrate postcss-mixin plugin (for css mixins) is installed and working */
 
 body {
-	background-color: wheat;
+	background-color: tomato;
 }
 
 /* import './styles/styles.css'; in js  */

@@ -34,6 +34,7 @@ class Profiles extends React.Component {
 		  </nav>
 
 
+			{/* the views that will render */}
 			<Switch>
 				<Route exact path='/about' component={About} />
 				<Route exact path='/resources' component={Resources} />
